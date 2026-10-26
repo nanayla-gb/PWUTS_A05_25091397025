@@ -1,0 +1,13 @@
+<h1>Detail barang dan cek stok</h1>
+<p class="lead">Pilih barang, lalu masukkan tanggal untuk melihat sisa stok pada rentang itu. Data contoh, belum terhubung ke basis data.</p>
+<div id="items" class="items" role="group" aria-label="Pilih barang"></div>
+<section id="detail" class="panel" aria-live="polite"></section>
+<section class="panel">
+  <h2>Simulasi tanggal pinjam</h2>
+  <div class="row">
+    <div><label for="tglPinjam">Tanggal pinjam</label><input type="date" id="tglPinjam"></div>
+    <div><label for="tglKembali">Tanggal kembali</label><input type="date" id="tglKembali"></div>
+    <div><label for="jumlah">Jumlah unit</label><input type="number" id="jumlah" min="1" value="1"></div>
+  </div>
+  <div id="hasil" aria-live="polite"></div>
+</section>

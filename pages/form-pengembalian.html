@@ -1,0 +1,28 @@
+<h1>Catat pengembalian barang</h1>
+<p class="lead">Untuk admin. Pilih transaksi, isi tanggal dan kondisi barang saat kembali. Isian ini mengisi tabel <em>pengembalian</em>.</p>
+<form id="formKembali" class="panel" action="https://httpbin.org/post" method="post" novalidate>
+  <label for="id_peminjaman">Transaksi peminjaman</label>
+  <select id="id_peminjaman" name="id_peminjaman" aria-describedby="err_id_peminjaman"><option value="">Pilih transaksi...</option></select>
+  <p class="err" id="err_id_peminjaman"></p>
+  <div id="infoPinjam" class="info" aria-live="polite"></div>
+
+  <label for="tgl_dikembalikan">Tanggal dikembalikan</label>
+  <input type="date" id="tgl_dikembalikan" name="tgl_dikembalikan" aria-describedby="err_tgl_dikembalikan">
+  <p class="err" id="err_tgl_dikembalikan"></p>
+
+  <fieldset aria-describedby="err_kondisi_kembali">
+    <legend>Kondisi saat kembali</legend>
+    <label class="radio"><input type="radio" name="kondisi_kembali" value="Baik"> Baik</label>
+    <label class="radio"><input type="radio" name="kondisi_kembali" value="Rusak ringan"> Rusak ringan</label>
+    <label class="radio"><input type="radio" name="kondisi_kembali" value="Rusak berat"> Rusak berat</label>
+    <label class="radio"><input type="radio" name="kondisi_kembali" value="Hilang"> Hilang</label>
+  </fieldset>
+  <p class="err" id="err_kondisi_kembali"></p>
+
+  <label for="catatan">Catatan <span class="muted" id="hintCatatan">(boleh kosong bila kondisi baik)</span></label>
+  <textarea id="catatan" name="catatan" rows="3" maxlength="255" aria-describedby="err_catatan"></textarea>
+  <p class="err" id="err_catatan"></p>
+
+  <button type="submit" class="btn" id="btnKirim">Simpan pengembalian</button>
+</form>
+<div id="sukses" class="panel" hidden aria-live="polite"></div>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" role="img" aria-label="Slip peminjaman proyektor dengan stempel disetujui">
+<rect x="30" y="20" width="300" height="240" rx="14" fill="#fff" stroke="#14213d" stroke-width="3"/>
+<path d="M30 34a14 14 0 0 1 14-14h272a14 14 0 0 1 14 14v46H30z" fill="#f2b705" stroke="#14213d" stroke-width="3"/>
+<circle cx="180" cy="50" r="9" fill="#fff" stroke="#14213d" stroke-width="3"/>
+<g font-family="sans-serif" fill="#14213d"><text x="56" y="112" font-size="13">Barang</text><text x="56" y="136" font-size="22" font-weight="700">Proyektor</text><text x="56" y="168" font-size="13">Pinjam sampai kembali</text><text x="56" y="190" font-size="17">10 Okt - 12 Okt 2026</text></g>
+<g transform="rotate(-10 252 230)"><rect x="196" y="208" width="112" height="40" rx="6" fill="#fff" stroke="#1b7a5a" stroke-width="3"/><text x="252" y="235" font-size="17" font-weight="700" fill="#1b7a5a" text-anchor="middle" font-family="sans-serif">DISETUJUI</text></g>
+</svg>
