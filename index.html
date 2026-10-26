@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vokasi Loan - Peminjaman Barang Fakultas Vokasi UNESA</title>
+<link rel="icon" href="img/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <button id="menuBtn" class="menu-btn" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="nav">&#9776;</button>
+  <a href="#home" class="brand" data-key="home"><img src="img/logo.svg" alt="" width="28" height="28">Vokasi Loan</a>
+</header>
+<div class="shell">
+  <nav id="nav" class="nav" aria-label="Menu utama">
+    <a href="#home" data-key="home" class="active" aria-current="page">Beranda</a>
+    <a href="pages/detail-barang.html" data-key="detail" data-script="js/detail-barang.js">Detail &amp; cek stok</a>
+    <a href="pages/form-pengembalian.html" data-key="kembali" data-script="js/form-pengembalian.js">Catat pengembalian</a>
+  </nav>
+  <main id="content" tabindex="-1">
+    <section class="hero">
+      <div>
+        <h1>Cek stok dulu, baru ajukan pinjam.</h1>
+        <p class="lead">Peminjaman barang di Fakultas Vokasi UNESA, dari pengajuan sampai pengembalian, tercatat di satu tempat.</p>
+        <p class="actions">
+          <a class="btn" href="pages/detail-barang.html" data-go="detail">Cek ketersediaan barang</a>
+          <a class="btn alt" href="pages/form-pengembalian.html" data-go="kembali">Catat pengembalian</a>
+        </p>
+      </div>
+      <img src="img/hero.svg" alt="Slip peminjaman proyektor dengan stempel disetujui" width="360" height="280">
+    </section>
+    <section>
+      <h2>Alur peminjaman</h2>
+      <ol class="steps">
+        <li><strong>Pilih barang dan cek tanggal.</strong> Lihat sisa stok pada rentang tanggal yang kamu butuhkan.</li>
+        <li><strong>Ajukan peminjaman.</strong> Isi tanggal pinjam, tanggal kembali, dan keperluan.</li>
+        <li><strong>Admin memverifikasi.</strong> Pengajuan disetujui atau ditolak, statusnya bisa dipantau.</li>
+        <li><strong>Barang dikembalikan.</strong> Admin mencatat tanggal dan kondisi barang.</li>
+      </ol>
+    </section>
+  </main>
+</div>
+<footer>Proposal Kelompok 5 &middot; Pemrograman Web &middot; Program Vokasi UNESA &middot; Nayla Nur Syifa (25091397025)</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
